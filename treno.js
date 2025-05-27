@@ -27,13 +27,15 @@ const age = Number(prompt("Quanti anni hai?"));
 
 console.log(km + " " + age)
 // 3 - Salvo i dati in variabili
-const prezzo = ("0.21€")
+let prezzo = 0.21
 
 // 4 - Calcolare il prezzo con 2 decimali
+let prezzoArrotondato = (prezzo.toFixed(2));
+console.log(prezzoArrotondato)
 
 // 5 - Verificare l'età per applicare eventuali sconti
-var age1 = 18
-var age2 = 65
+let age1 = 18
+let age2 = 65
 // 6 - Applicare sconto 20% per minorenni
 // 7 - Applicare sconto 40% per over 65
 // 8 - Output prezzo con massimo due decimali
