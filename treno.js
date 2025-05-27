@@ -17,12 +17,26 @@ TIP: per controllare che la vostra logica sui prezzi funzioni correttamente, pro
 100km, 70 anni => prezzo corretto: €12.60 */
 
 // 1 - Chiedere all'utente quanti km vuole percorrere
+const km = Number(prompt("Quanti kilometri devi percorrere?"));
+
+
+
 // 2 - Chiedere l'età del passeggero
+
+const age = Number(prompt("Quanti anni hai?"));
+
+console.log(km + " " + age)
 // 3 - Salvo i dati in variabili
+const prezzo = ("0.21€")
+
 // 4 - Calcolare il prezzo con 2 decimali
+
 // 5 - Verificare l'età per applicare eventuali sconti
+var age1 = 18
+var age2 = 65
 // 6 - Applicare sconto 20% per minorenni
 // 7 - Applicare sconto 40% per over 65
 // 8 - Output prezzo con massimo due decimali
+
 
 
