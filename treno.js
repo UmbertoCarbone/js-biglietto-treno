@@ -30,6 +30,8 @@ console.log(km, age)
 let prezzo = km * 0.21
 let underAge = 18
 let overAge = 65
+let sconto = 20
+let sconto1 = 40
 
 // 4 - Calcolare il prezzo con 2 decimali
 let prezzoArrotondato = (prezzo.toFixed(2));
@@ -39,18 +41,23 @@ console.log(prezzoArrotondato)
 // 5 - Verificare l'età per applicare eventuali sconti
 if (age < underAge) {
     // 6 - Applicare sconto 20% per minorenni
-    console.log("minorenne");
-} else if (age > overAge) {
+    // prezzo = prezzo - (prezzo * 100 / sconto)
+    prezzo -= prezzo * 0.2 // -= sottrai al valore attuale e assegna 
+    console.log("minorenne", prezzo.toFixed(2));
 
+
+
+} else if (age > overAge) {
     // 7 - Applicare sconto 40% per over 65
-    console.log("over65");
+    prezzo -= prezzo * 0.4
+
+    console.log("over65", prezzo.toFixed(2));
 } else {
 
     // 8 - Output prezzo con massimo due decimali
-    console.log("prezzo regolare");
+    console.log("prezzo regolare", prezzo);
 
 }
-
 
 
 
