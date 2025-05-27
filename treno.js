@@ -25,20 +25,32 @@ const km = Number(prompt("Quanti kilometri devi percorrere?"));
 
 const age = Number(prompt("Quanti anni hai?"));
 
-console.log(km + " " + age)
+console.log(km, age)
 // 3 - Salvo i dati in variabili
-let prezzo = 0.21
+let prezzo = km * 0.21
+let underAge = 18
+let overAge = 65
 
 // 4 - Calcolare il prezzo con 2 decimali
 let prezzoArrotondato = (prezzo.toFixed(2));
 console.log(prezzoArrotondato)
 
+
 // 5 - Verificare l'età per applicare eventuali sconti
-let age1 = 18
-let age2 = 65
-// 6 - Applicare sconto 20% per minorenni
-// 7 - Applicare sconto 40% per over 65
-// 8 - Output prezzo con massimo due decimali
+if (age < underAge) {
+    // 6 - Applicare sconto 20% per minorenni
+    console.log("minorenne");
+} else if (age > overAge) {
+
+    // 7 - Applicare sconto 40% per over 65
+    console.log("over65");
+} else {
+
+    // 8 - Output prezzo con massimo due decimali
+    console.log("prezzo regolare");
+
+}
+
 
 
 
